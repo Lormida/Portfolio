@@ -47,7 +47,6 @@ export default {
     Tilt3D,
     Chart,
     Ufo,
-    // CardTilt
   },
   setup() {
     const store = useStore()
@@ -113,7 +112,6 @@ export default {
   );
 }
 html {
-  scroll-snap-type: none;
 }
 
 .home-overlay {
@@ -126,7 +124,6 @@ html {
   width: 100%;
   min-height: 100vh;
   height: auto;
-  scroll-snap-align: start;
   overflow: hidden;
   border-bottom: 4px solid rgba(255, 255, 255, 0.4);
 }
@@ -136,7 +133,6 @@ html {
   width: 100%;
   min-height: 100vh;
   height: auto;
-  scroll-snap-align: start;
   overflow: hidden;
   @media (max-width: 810px) {
     flex-direction: column;
@@ -150,11 +146,10 @@ html {
   width: 100%;
   min-height: 100vh;
   height: auto;
-  scroll-snap-align: start;
   margin-top: 35px;
   color: #fff;
   font-size: 62.5%;
-  perspective: 500px;
+  // perspective: 500px;
   border-bottom: 4px solid rgba(255, 255, 255, 0.4);
 }
 .container-slider {
@@ -163,7 +158,6 @@ html {
   width: 100%;
   min-height: 100vh;
   height: auto;
-  scroll-snap-align: start;
   overflow: hidden;
   border-top: 4px solid rgba(255, 255, 255, 0.4);
 }

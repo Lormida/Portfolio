@@ -36,7 +36,7 @@ export default {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  transform-style: preserve-3d;
+  // transform-style: preserve-3d;
   top: -5%;
 
   // .pazzles__item
@@ -46,7 +46,7 @@ export default {
       rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
-    transform-style: preserve-3d;
+    // transform-style: preserve-3d;
     background-color: #222;
     position: relative;
     width: 40%;
