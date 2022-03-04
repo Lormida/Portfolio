@@ -1,7 +1,16 @@
 <template>
   <div class="container">
     <div class="spinner-container">
-      <h1 class="title-details">Project details</h1>
+      <h1 class="title-details">
+        Project details
+        <router-link to="/">
+          <img
+            class="title-back"
+            src="@/../public/assets/svg/back.svg"
+            alt="back"
+          />
+        </router-link>
+      </h1>
 
       <a
         :href="`${projectSrcCode}`"
@@ -57,8 +66,6 @@ export default {
     DetailsSection
   },
   setup(props) {
-    console.log(props.id);
-
     const store = useStore()
     let spinner = null
     let angle = ref(0)
@@ -203,14 +210,17 @@ export default {
 
 .title-details {
   box-sizing: border-box;
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
   top: 3%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 66px;
+  font-size: 6rem;
   text-align: center;
   color: #001219;
-  width: fit-content;
+  width: 60%;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -219,15 +229,29 @@ export default {
   padding: 5px 10px;
 
   @media (max-width: 1080px) {
-    font-size: 55px;
+    font-size: 5rem;
   }
   @media (max-width: 810px) {
-    width: 70%;
+    width: 100%;
+  }
+  @media (max-width: 650px) {
+    font-size: 4rem;
   }
   @media (max-width: 414px) {
-    width: 90%;
     font-size: 3.5rem;
     border-width: 4px;
+  }
+}
+.title-back {
+  height: 60px;
+  width: 60px;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @media (max-width: 414px) {
+  width: 40px;
+  height: 40px;
   }
 }
 .spinner-container__wrapper-spinner3d {
