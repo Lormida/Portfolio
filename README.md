@@ -6,7 +6,7 @@
 
 
 <h4 align="left">
-	This is my site portfolio that encapsulates not only my knowledge in frontend but also some of my recent pet projects. I hope, you like it! 
+	This is  <a href="https://lormida-portfolio.herokuapp.com/start/">my site</a> portfolio that encapsulates not only my knowledge in frontend but also some of my recent pet projects. I hope, you like it! 
 </h4>
 
 <p align="center">
